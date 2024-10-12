@@ -21,7 +21,7 @@ public class Main {
         int min = add[0];
         int max = add[0];
 
-        for (int i = 1; i < add.length; i++) {
+        for (int i = 0; i < add.length; i++) {
             if (add[i] < min) {
                 min = add[i];
             }
@@ -31,6 +31,31 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за неделю составила " + min + " рублей.");
         System.out.println("Максимальная сумма трат за неделю составила " + max + " рублей.");
+
+        System.out.println();
+        System.out.println("Задание 3");
+
+        int resout= 0;
+        for (int i = 0; i < add.length; i++) {
+            resout += add[i];
+            System.out.println(resout);
+
+
+
+        }
+        double average = (double) resout / add.length;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+        System.out.printf("Средняя сумма трат за месяц составила %.2f рублей", average);
+
+
+        System.out.println();
+
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0 ; i--) {
+            System.out.print(reverseFullName[i]);
+
+        }
 
 
     }
